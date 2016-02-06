@@ -32,10 +32,10 @@
 
     // TODO: it should be generic and must works even for simple strings
     if (this.start !== null && this.end !== null) {
-      title = Planner.Utils.pad(this.start.getHours()) + ':'
-      + Planner.Utils.pad(this.start.getMinutes()) + ' - '
-      + Planner.Utils.pad(this.end.getHours()) + ':'
-      + Planner.Utils.pad(this.end.getMinutes());
+      title = Planner.Utils.pad(this.start.getDate()) + '\/'
+      + Planner.Utils.pad(this.start.getMonth() + 1) + ' - '
+      + Planner.Utils.pad(this.end.getDate()) + '\/'
+      + Planner.Utils.pad(this.end.getMonth() + 1);
     }
 
     return title;
