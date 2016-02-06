@@ -30,9 +30,9 @@
 
     function findHeight () {
       var date = new Date(),
-          effectiveHours = date.getHours() + (date.getMinutes() / 60);
+          effectiveDate = date.getDate() + (date.getHours() / 60);
 
-      return (effectiveHours * options.timeslotHeight * options.timeslots) + options.hourlineMargin;
+      return (effectiveDate * options.timeslotHeight * options.timeslots) + options.hourlineMargin;
     }
 
     function scrollScreen () {
