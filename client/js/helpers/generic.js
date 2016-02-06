@@ -5,13 +5,13 @@
   // ----------
 
   var _dayColumns = [
-    {id: 0, name: 'Monday'},
-    {id: 1, name: 'Tuesday'},
-    {id: 2, name: 'Wednesday'},
-    {id: 3, name: 'Thursday'},
-    {id: 4, name: 'Friday'},
-    {id: 5, name: 'Saturday'},
-    {id: 6, name: 'Sunday'}
+    {id: 0, name: 'World Domination'},
+    {id: 1, name: 'Jupiter Project'},
+    {id: 2, name: 'Dyson Sphere'},
+    {id: 3, name: 'Voyager 1 Retrieval'},
+    {id: 4, name: 'Comets Harvestings'},
+    {id: 5, name: 'Europa Drilling'},
+    {id: 6, name: 'TMA-1 Investigation'}
   ];
 
   var _hourRows = [
