@@ -32,8 +32,8 @@
   Mixin._attributeToIndex = function (attribute) {
     var index;
 
-    if (typeof attribute.getHours === 'function' && typeof attribute.getMinutes === 'function') {
-      index = attribute.getHours() * this.options.timeslots + attribute.getMinutes() / (60 / this.options.timeslots);
+    if (typeof attribute.getDay === 'function') {
+      index = attribute.getDate() * this.options.timeslots;
     } else if (typeof attribute === 'string') {
       index = this.options.rowLabels.indexOf(attribute);
     } else {
