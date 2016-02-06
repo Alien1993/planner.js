@@ -75,7 +75,7 @@
     }
 
     function isPast(card) {
-      return card.start <= Date.now();
+      return card.end <= Date.now();
     }
 
     // Heap Event looper
@@ -173,7 +173,7 @@
   // --------
 
   Hourline.DEFAULTS = {
-    hourlineMargin: 85,
+    hourlineMargin: 0,
     hourlineScreenSection: 3,
     hourlineTickUpdate: 5,
     redrawInterval: 900000
