@@ -26,7 +26,7 @@
 
     // Avoid negative values (end < start) during resize
     if (currentCardPosition >= 0) {
-      this.currentCard.update({end: Utils.updateDate(this.currentCard.end, endAttribute.hours, endAttribute.minutes)});
+      this.currentCard.update({end: Utils.updateDate(this.currentCard.end, endAttribute.days, endAttribute.hours)});
       this.planner.updateDom(this.currentElement, this.currentCard);
     }
   };

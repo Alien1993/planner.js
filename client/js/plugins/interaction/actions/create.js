@@ -7,8 +7,8 @@
     var startAttribute = this.planner._indexToAttribute(Utils.index(element))
       , endAttribute = this.planner._indexToAttribute(Utils.index(element) + 1);
 
-    var start = Utils.updateDate(new Date(), startAttribute.hours, startAttribute.minutes)
-      , end = Utils.updateDate(new Date(), endAttribute.hours, endAttribute.minutes)
+    var start = Utils.updateDate(new Date(), startAttribute.days, startAttribute.hours)
+      , end = Utils.updateDate(new Date(), endAttribute.days, endAttribute.hours)
       , column = [parseInt(element.parentElement.getAttribute('data-column-id'), 10)]
       , cardId = null;
 

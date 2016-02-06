@@ -48,16 +48,16 @@
   // TODO [REQUIRED]: index assignment refactoring
   Mixin._indexToAttribute = function (index) {
     // Convert date time object
-    var hours = Math.floor((index - 1) / this.options.timeslots);
-    var minutes = 15 * (index % this.options.timeslots);
+    var days = Math.floor((index - 1) / this.options.timeslots);
+    var hours = 6 * (index % this.options.timeslots);
 
-    if (minutes === index % this.options.timeslots) {
-      hours += 1;
+    if (hours === index % this.options.timeslots) {
+      days += 1;
     }
 
     return {
-        hours: hours,
-        minutes: minutes
+        days: days,
+        hours: hours
     };
   };
 

@@ -105,12 +105,12 @@
    * @param minutes
    * @param [seconds]
    */
-  Utils.updateDate = function (date, hours, minutes, seconds) {
+
+  Utils.updateDate = function (date, days, hours) {
     var dateObject = new Date(date);
 
+    dateObject.setDate(days);
     dateObject.setHours(hours);
-    dateObject.setMinutes(minutes);
-    dateObject.setSeconds(seconds || 0);
 
     return dateObject;
   };

@@ -21,8 +21,8 @@
     // Update Card and DOM object
     var startAttribute = this.planner._indexToAttribute(startPosition)
       , endAttribute = this.planner._indexToAttribute(startPosition + offset)
-      , newStart = Utils.updateDate(this.currentCard.start, startAttribute.hours, startAttribute.minutes)
-      , newEnd = Utils.updateDate(this.currentCard.end, endAttribute.hours, endAttribute.minutes);
+      , newStart = Utils.updateDate(this.currentCard.start, startAttribute.days, startAttribute.hours)
+      , newEnd = Utils.updateDate(this.currentCard.end, endAttribute.days, endAttribute.hours);
 
     this.currentCard.update({
       columns: [column],
